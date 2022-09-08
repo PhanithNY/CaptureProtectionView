@@ -1,0 +1,11 @@
+framework module CaptureProtectionViewBinary {
+  umbrella header "CaptureProtectionViewBinary.h"
+
+  export *
+  module * { export * }
+}
+
+module CaptureProtectionViewBinary.Swift {
+    header "CaptureProtectionViewBinary-Swift.h"
+    requires objc
+}
