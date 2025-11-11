@@ -10,7 +10,7 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "CaptureProtectionView",
-            targets: ["CaptureProtectionView", "SafeScreenshot"]),
+            targets: ["CaptureProtectionView"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -22,9 +22,6 @@ let package = Package(
         .target(
             name: "CaptureProtectionView",
             dependencies: []),
-        .binaryTarget(
-          name: "SafeScreenshot",
-          path: "./Sources/SafeScreenshot.xcframework"),
         .testTarget(
             name: "CaptureProtectionViewTests",
             dependencies: ["CaptureProtectionView"]),
